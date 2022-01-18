@@ -98,6 +98,11 @@ manage your email domains, users, etc.</p>
     <input class="form-control" type="text" name="admin_path" id="admin_path" style="display: none">
 </div>
 
+<div class="form-group">
+    <input type="checkbox" name="admin_override" value="true" id="adminoverrides">
+    <label>Allow admin container to access overrides (experimental)</label>
+</div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 <script type="text/javascript" src="{{ url_for('static', filename='render.js') }}"></script>

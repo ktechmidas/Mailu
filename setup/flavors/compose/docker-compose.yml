@@ -65,6 +65,9 @@ services:
     volumes:
       - "{{ root }}/data:/data"
       - "{{ root }}/dkim:/dkim"
+      {% if admin_override %}
+      - "{{ root }}/overrides:/overrides"
+      {% endif %}
     depends_on:
       - redis
     {% if resolver_enabled %}
